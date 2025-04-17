@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Ханган</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/zoom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Ханган</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html" class="active">Меню</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu-hero">
+        <h1>Наше Меню</h1>
+    </section>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-special">
+                <div class="menu-special-content">
+                    <div class="menu-item-badge chef-choice">Выбор шефа</div>
+                    <h3 class="menu-special-title">Сет "Корейская симфония"</h3>
+                    <p class="menu-special-desc">Уникальное сочетание лучших блюд корейской кухни: бибимбап, бульгоги, кимчи и традиционные панчханы. Идеально для первого знакомства с корейской кухней.</p>
+                </div>
+                <img src="images/special-set.jpg" alt="Сет Корейская симфония" class="menu-special-img">
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="starters">Закуски</button>
+                <button class="menu-tab" data-category="main">Основные блюда</button>
+                <button class="menu-tab" data-category="soups">Супы</button>
+                <button class="menu-tab" data-category="drinks">Напитки</button>
+                <button class="menu-tab" data-category="desserts">Десерты</button>
+            </div>
+            
+            <div class="zoom-container" id="zoomContainer">
+                <div class="zoom-content">
+                    <div class="zoom-close" id="zoomClose"><i class="fas fa-times"></i></div>
+                    <img src="" alt="" class="zoom-image" id="zoomImage">
+                    <div class="zoom-details">
+                        <h2 id="zoomTitle"></h2>
+                        <p id="zoomPrice"></p>
+                        <p id="zoomDesc"></p>
+                        <div id="zoomBadges"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="starters" class="menu-category active">
+                <h2 class="section-title"><i class="fas fa-utensils"></i> Закуски и салаты</h2>
+                <div class="menu-items-container">
+                    <div class="menu-item">
+                        <img src="images/kimchi.jpg" alt="Кимчи" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Кимчи</h4>
+                                <span class="menu-item-price">450 ₽</span>
+                            </div>
+                            <span class="menu-item-badge spicy">Острое</span>
+                            <p class="menu-item-desc">Традиционная корейская квашеная капуста с острым соусом из кочхуджана, чеснока и имбиря.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="images/pajeon.jpg" alt="Пхаджон" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Пхаджон</h4>
+                                <span class="menu-item-price">590 ₽</span>
+                            </div>
+                            <span class="menu-item-badge vegetarian">Вегетарианское</span>
+                            <p class="menu-item-desc">Корейский зеленый луковый блин с морепродуктами, подается с соевым соусом.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="images/namul.jpg" alt="Намуль" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Намуль</h4>
+                                <span class="menu-item-price">480 ₽</span>
+                            </div>
+                            <span class="menu-item-badge vegetarian">Вегетарианское</span>
+                            <p class="menu-item-desc">Ассорти из корейских салатов: шпинат, ростки сои, папоротник с кунжутным маслом.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="main" class="menu-category">
+                <h2 class="section-title"><i class="fas fa-drumstick-bite"></i> Основные блюда</h2>
+                <div class="menu-items-container">
+                    <div class="menu-item">
+                        <img src="images/bibimbap.jpg" alt="Бибимбап" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Бибимбап</h4>
+                                <span class="menu-item-price">850 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Рис с овощами, мясом и яйцом, подается с кочхуджан. Перемешивается перед употреблением.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="images/bulgogi.jpg" alt="Бульгоги" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Бульгоги</h4>
+                                <span class="menu-item-price">950 ₽</span>
+                            </div>
+                            <span class="menu-item-badge chef-choice">Выбор шефа</span>
+                            <p class="menu-item-desc">Маринованная говядина на гриле с овощами, подается с рисом и листьями салата.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="images/japchae.jpg" alt="Чопчхе" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Чопчхе</h4>
+                                <span class="menu-item-price">780 ₽</span>
+                            </div>
+                            <span class="menu-item-badge vegetarian">Вегетарианское</span>
+                            <p class="menu-item-desc">Лапша из батата с овощами, обжаренная в кунжутном масле с соевым соусом.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="soups" class="menu-category">
+                <h2 class="section-title"><i class="fas fa-utensil-spoon"></i> Супы</h2>
+                <div class="menu-items-container">
+                        <div class="menu-item">
+                            <img src="images/sundubu-jjigae.jpg" alt="Сундубу-ччиге" class="menu-item-img">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Сундубу-ччиге</h4>
+                                    <span class="menu-item-price">850 ₽</span>
+                                </div>
+                                <span class="menu-item-badge spicy">Острое</span>
+                                <p class="menu-item-desc">Корейский острый суп с мягким тофу и морепродуктами.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="images/samgyetang.jpg" alt="Самгетан" class="menu-item-img">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Самгетан</h4>
+                                    <span class="menu-item-price">950 ₽</span>
+                                </div>
+                                <p class="menu-item-desc">Наваристый корейский суп с целой молодой курицей, фаршированной рисом, женьшенем, чесноком и финиками.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="images/kimchi-jjigae.jpg" alt="Кимчи-ччиге" class="menu-item-img">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Кимчи-ччиге</h4>
+                                    <span class="menu-item-price">750 ₽</span>
+                                </div>
+                                <span class="menu-item-badge spicy">Острое</span>
+                                <p class="menu-item-desc">Корейский рагу из ферментированной кимчи, свинины, тофу и овощей, с густым насыщенным бульоном.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+            <div id="drinks" class="menu-category">
+                <h2 class="section-title"><i class="fas fa-glass-cheers"></i> Напитки</h2>
+                <div class="menu-items-container">
+                    <div class="menu-item">
+                        <img src="images/soju.jpg" alt="Соджу" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Соджу</h4>
+                                <span class="menu-item-price">900 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Кристально-чистый корейский аналог водки (20% крепости) с мягким, слегка сладковатым вкусом.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/makgeolli.jpg" alt="Макколи" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Макколи</h4>
+                                <span class="menu-item-price">650 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Корейский рисовый ликёр (6–8% крепости) с лёгкой игристостью и кисло-сладким йогуртовым послевкусием.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/omija-tea.jpg" alt="Чай омиджа" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Чай омиджа</h4>
+                                <span class="menu-item-price">400 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Традиционный корейский чай из ферментированных ягод лимонника, с ярким рубиновым цветом и уникальным вкусом</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="desserts" class="menu-category">
+                <h2 class="section-title"><i class="fas fa-ice-cream"></i> Десерты</h2>
+                <div class="menu-items-container">
+                    <div class="menu-item">
+                        <img src="images/hoddeok.jpg" alt="Хотток" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Хотток</h4>
+                                <span class="menu-item-price">200 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Жареные корейские лепёшки с хрустящей корочкой и сладкой начинкой.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/bingsu.jpg" alt="Бинсу" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Бинсу</h4>
+                                <span class="menu-item-price">500 ₽</span>
+                            </div>
+                            <span class="menu-item-badge chef-choice">Выбор шефа</span>
+                            <p class="menu-item-desc">Корейский десерт с колотым льдом, увенчанный сладкой красной фасолью, рисовыми лепешками, фруктами и сгущенкой.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/yakgwa.jpg" alt="Якква" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Якква</h4>
+                                <span class="menu-item-price">400 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Традиционные корейские медовые пряники, хрустящие снаружи и мягкие внутри, с ароматом имбиря, корицы и кунжутного масла.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ресторан корейской кухни "Ханган". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script/zoom.js"></script>
+</body>
+</html>

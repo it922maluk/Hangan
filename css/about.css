@@ -1,0 +1,24 @@
+/* О нас */
+.about-section {
+    padding: 100px 0 60px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content img {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    border-radius: 5px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
