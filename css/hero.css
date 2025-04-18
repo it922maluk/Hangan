@@ -161,12 +161,48 @@
 }
 
 .feature h3 {
-    font-family: 'Noto Sans KR', sans-serif;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.332);
-    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
     color: #e74c3c;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.feature h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #e74c3c, #f39c12);
 }
 
 .feature p {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Georgia', serif;
+    font-size: 17.5px;
+    color: #555;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-style: italic;
+    padding: 0 20%;
+    line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .section-subtitle {
+      padding: 0 10%;
+      font-size: 1rem;
+    }
+  }
