@@ -6,13 +6,10 @@
     <title>Галерея - Ханган</title>
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/zoom.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/zoom.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -30,37 +27,94 @@
         </div>
     </header>
 
+    <section class="gallery-hero">
+        <h1>Наша Галерея</h1>
+    </section>
+
     <section class="gallery-section">
         <div class="container">
-            <h2>Наша галерея</h2>
+
             <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="images/dish1.jpg" alt="Бибимбап">
-                    <p>Бибимбап</p>
+                <!-- Избранное фото -->
+                <div class="gallery-item featured-item" data-category="food">
+                    <img src="images/gallery-featured.jpg" alt="Корейский сет" class="gallery-img">
+                    <div class="featured-caption">
+                        <h3>Сет "Ханган"</h3>
+                        <p>Лучшие блюда корейской кухни в одной подаче</p>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/dish2.jpg" alt="Бульгоги">
-                    <p>Бульгоги</p>
+
+                  <!-- Остальные фото -->
+                  <div class="gallery-item" data-category="food">
+                    <img src="images/bibimbap.jpg" alt="Бибимбап" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Бибимбап</h4>
+                        <p>Традиционное корейское блюдо</p>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/dish3.jpg" alt="Кимчи">
-                    <p>Кимчи</p>
+                
+                <div class="gallery-item" data-category="interior">
+                    <img src="images/interior2.jpg" alt="Интерьер" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Основной зал</h4>
+                        <p>Атмосфера современной Кореи</p>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/interior1.jpg" alt="Интерьер">
-                    <p>Наш интерьер</p>
+
+                <div class="gallery-item" data-category="team">
+                    <img src="images/team1.jpg" alt="Команда" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Наша команда</h4>
+                        <p>Профессионалы своего дела</p>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/interior2.jpg" alt="Зал">
-                    <p>Основной зал</p>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery-event1.jpg" alt="Мастер-класс" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Кулинарный мастер-класс</h4>
+                        <p>Учим готовить кимчи</p>
+                    </div>
                 </div>
-                <div class="gallery-item">
-                    <img src="images/chef.jpg" alt="Шеф-повар">
-                    <p>Наш шеф-повар</p>
+
+                <div class="gallery-item" data-category="food">
+                    <img src="images/bulgogi.jpg" alt="Бульгоги" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Бульгоги</h4>
+                        <p>Маринованная говядина на гриле</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="interior">
+                    <img src="images/interior1.jpg" alt="Барная зона" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Барная зона</h4>
+                        <p>Корейские напитки и коктейли</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <img src="images/kimchi.jpg" alt="Кимчи" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Домашнее кимчи</h4>
+                        <p>По традиционному рецепту</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img src="" alt="" class="modal-img" id="modalImage">
+            <div class="modal-nav">
+                <div class="modal-nav-btn" id="prevBtn">&#10094;</div>
+                <div class="modal-nav-btn" id="nextBtn">&#10095;</div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container">
@@ -68,6 +122,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script/gallery.js"></script>
+
 </body>
 </html>
