@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - Ханган</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/zoom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Ханган</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html" class="active">Меню</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="registration.html">Регестрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="menu-hero">
+        <h1>Наше Меню</h1>
+    </section>
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-special">
+                <div class="menu-special-content">
+                    <div class="menu-item-badge chef-choice">Выбор шефа</div>
+                    <h3 class="menu-special-title">Сет "Корейская симфония"</h3>
+                    <p class="menu-special-desc">Уникальное сочетание лучших блюд корейской кухни: бибимбап, бульгоги, кимчи и традиционные панчханы. Идеально для первого знакомства с корейской кухней.</p>
+                </div>
+                <img src="images/menu/special-set.jpg" alt="Сет Корейская симфония" class="menu-special-img">
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-category="starters">Закуски</button>
+                <button class="menu-tab" data-category="main">Основные блюда</button>
+                <button class="menu-tab" data-category="soups">Супы</button>
+                <button class="menu-tab" data-category="drinks">BBQ</button>
+                <button class="menu-tab" data-category="desserts">Десерты</button>
+            </div>
+            
+            <div class="zoom-container" id="zoomContainer">
+                <div class="zoom-content">
+                    <div class="zoom-close" id="zoomClose"><i class="fas fa-times"></i></div>
+                    <img src="" alt="" class="zoom-image" id="zoomImage">
+                    <div class="zoom-details">
+                        <h2 id="zoomTitle"></h2>
+                        <p id="zoomPrice"></p>
+                        <p id="zoomDesc"></p>
+                        <div id="zoomBadges"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="starters" class="menu-category active">
+                <h2 class="section-title"><i class="fas fa-utensils"></i> Закуски и салаты</h2><p>
+                <div class="menu-items-container">
+                    <div class="menu-item">
+                        <img src="images/menu/snacks/keranmari.jpg" alt="Керанмари" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Керанмари</h4>
+                                <span class="menu-item-price">650 ₽</span>
+                            </div>
+                            <span class="menu-item-badge spicy">Острое</span>
+                            <p class="menu-item-desc">Хрустящие корейские жареные креветки с маринованной говядиной пульгоги в сладко-чесночном соусе.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="images/menu/snacks/tokpoki.jpg" alt="Токпоки" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Токпоки</h4>
+                                <span class="menu-item-price">400 ₽</span>
+                            </div>
+                            <span class="menu-item-badge spicy">Острое</span>
+                            <p class="menu-item-desc">Корейская уличная закуска из рисовых палочек, тушенных в остро-сладком соусе кочхуджан.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="images/menu/snacks/Sunde.jpg" alt="Сундэ" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Сундэ</h4>
+                                <span class="menu-item-price">500 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Плотная колбаса из свиной крови, лапши и риса с добавлением специй.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/snacks/SeyTigim.jpg" alt="Сеу Тигим" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Сеу Тигим</h4>
+                                <span class="menu-item-price">550 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Хрустящие кусочки минтая, обжаренные во фритюре до золотистой корочки.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/snacks/Tansyuk.jpg" alt="Тансуюк" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Тансуюк</h4>
+                                <span class="menu-item-price">600 ₽</span>
+                            </div>
+                            <span class="menu-item-badge big-company">БК</span>
+                            <p class="menu-item-desc">Хрустящие кусочки курицы в сладко-остром соусе, обжареные во фритюре.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/snacks/YanemChicken.jpg" alt="Янем Чикен" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Янем Чикен</h4>
+                                <span class="menu-item-price">650 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Хрустящие жаренные куриные крылышки, покрытые густым сладко-острым соусом.</p>
+                        </div>
+                    </div>    
+                </div></p>
+            </div>
+            
+            <div id="main" class="menu-category">
+                <h2 class="section-title"><i class="fas fa-drumstick-bite"></i> Основные блюда</h2>
+                <div class="menu-items-container">
+                    <div class="menu-item">
+                        <img src="images/menu/main/Tolsot.jpg" alt="Тольсот" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Тольсот</h4>
+                                <span class="menu-item-price">750 ₽</span>
+                            </div>
+                            <span class="menu-item-badge spicy">Острое</span>
+                            <p class="menu-item-desc">Тоьсот пибимпаб с говядиной. Горячий каменный горшок с рисом, говядиной и овощами.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="images/menu/main/Chapche.jpg" alt="Чапче" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Чапче</h4>
+                                <span class="menu-item-price">600 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Чапче с говядиной. Корейская лапша из стеклянной фасоли с говядиной, овощами и грибами в сладко-соевом соусе.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <img src="images/menu/main/Tofu.jpg" alt="Тофу" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Ясуби Чиге</h4>
+                                <span class="menu-item-price">550 ₽</span>
+                            </div>
+                            <span class="menu-item-badge vegetarian">Вегетарианское</span>
+                            <p class="menu-item-desc">Нежный шелковый тофу, тушеный в красном бульоне на основе кочхуджана с морепродуктами, грибами, цукини и яйцом.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/main/ChanoGui.jpg" alt="Чано гуи" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Чано гуи</h4>
+                                <span class="menu-item-price">500 ₽</span>
+                            </div>
+                            <span class="menu-item-badge spicy">Острое</span>
+                            <p class="menu-item-desc">Пикантные куриные потрошки, обжаренные с чесноком, луком и острым корейским соусом.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/main/TaktoriTan.jpg" alt="Тактори тан" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Тактори тан</h4>
+                                <span class="menu-item-price">450 ₽</span>
+                            </div>
+                            <span class="menu-item-badge big-company">БК</span>
+                            <p class="menu-item-desc">Наваристый прозрачный бульон с нежными куриными патрошками, овощами и пряностями.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/main/ChykumiDopab.jpg" alt="Чукуми допаб" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Чукуми допаб</h4>
+                                <span class="menu-item-price">750 ₽</span>
+                            </div>
+                            <span class="menu-item-badge spicy">Острое</span>
+                            <p class="menu-item-desc">Острый корейский рисовый суп с осьминогом, овощами и добавлением свинины или морепродуктов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="soups" class="menu-category">
+                <h2 class="section-title"><i class="fas fa-utensil-spoon"></i> Супы</h2>
+                <div class="menu-items-container">
+                        <div class="menu-item">
+                            <img src="images/menu/soup/Somun.jpg" alt="Сомен" class="menu-item-img">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Сомен</h4>
+                                    <span class="menu-item-price">500 ₽</span>
+                                </div>
+                                <span class="menu-item-badge spicy">Острое</span>
+                                <p class="menu-item-desc">Холодная лапша с добавлением кимчи, огурца и кунжутного масла.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="images/menu/soup/KimChi.jpg" alt="Кимчи" class="menu-item-img">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Кимчи</h4>
+                                    <span class="menu-item-price">850 ₽</span>
+                                </div>
+                                <span class="menu-item-badge spicy">Острое</span>
+                                <p class="menu-item-desc">Острое корейское рагу из ферментированной кимчи с свининой, тофу, грибами и овощами, тешеное в пряном бульоне.</p>
+                            </div>
+                        </div>
+
+                        <div class="menu-item">
+                            <img src="images/menu/soup/Kuksu.jpg" alt="Куксу" class="menu-item-img">
+                            <div class="menu-item-content">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Куксу</h4>
+                                    <span class="menu-item-price">550 ₽</span>
+                                </div>
+                                <span class="menu-item-badge spicy">Острое</span>
+                                <p class="menu-item-desc">Корейская холодная лапша, подаваемая в ароматном мясном бульоне с огурцом, грушей и горчичной заправкой.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+            <div id="drinks" class="menu-category">
+                <h2 class="section-title"><i class='fa fa-fire'></i> BBQ</h2>
+                <div class="menu-items-container">
+                    <div class="menu-item">
+                        <img src="images/menu/BBQ/Chadol.jpg" alt="ЧадольБаги" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Чадоль Баги</h4>
+                                <span class="menu-item-price">900 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Тонко нарезанная премиальная говядина, нежное мясо с легкой сладостью и дымным ароматом.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/BBQ/Meat.jpg" alt="Ассорти" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Мясное ассорти</h4>
+                                <span class="menu-item-price">1300 ₽</span>
+                            </div>
+                            <span class="menu-item-badge big-company">БК</span>
+                            <p class="menu-item-desc">Набор, включающий разные виды мяса: чадольбаги, самгепсаль, вуджи-галби, ханчжон-гуи.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/BBQ/Segmepsal.jpg" alt="Сегмепсаль" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Сегмепсаль</h4>
+                                <span class="menu-item-price">700 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Толстые ломтики свиной грудинки с листьями салата, сырым чесноком, соусом ссамджан и кимчи.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="desserts" class="menu-category">
+                <h2 class="section-title"><i class="fas fa-ice-cream"></i> Десерты</h2>
+                <div class="menu-items-container">
+                    <div class="menu-item">
+                        <img src="images/menu/dessert/IceCream.jpg" alt="Мороженое" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Мороженое <p>во фруктах</p></h4>
+                                <span class="menu-item-price">600 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Десерт из натуральных фруктов, вычищенных изнутри и наполненных нежным мороженым с добавлением свежих ягод, моти и сиропа.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/dessert/Fruit.jpg" alt="Фрукты" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Фрукты <p>в карамели</p></h4>
+                                <span class="menu-item-price">550 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Свежие сезонные фрукты, покрытые хрустящей карамельной глазурью с добавлением орехов и кунжута.</p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="images/menu/dessert/Hottok,jpg.jpg" alt="Хотток" class="menu-item-img">
+                        <div class="menu-item-content">
+                            <div class="menu-item-header">
+                                <h4 class="menu-item-title">Хотток <p>с мороженым</p></h4>
+                                <span class="menu-item-price">450 ₽</span>
+                            </div>
+                            <p class="menu-item-desc">Жареные лепешки хотток с коречневым сахаром, корицей и орехами, подаются теплыми с шариком мореженого.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ресторан корейской кухни "Ханган". Все права защищены.</p>
+        </div>
+    </footer>
+    <script src="script/menu.js"></script>
+</body>
+</html>

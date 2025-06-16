@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Ханган</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <link rel="stylesheet" href="css/zoom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Ханган</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html" class="active">Контакты</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="registration.html">Регестрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contacts-hero">
+        <h1>Как нас найти</h1>
+    </section>
+
+    <div class="container">
+        <div class="contacts-container">
+            <div class="contact-info">
+                <h2><i class="fas fa-map-marker-alt"></i> Наши контакты</h2>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Адрес</h3>
+                        <p>г. Москва, ул. Корейская, д. 15<br>Бизнес центр "Сеул", 3 этаж</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Телефон</h3>
+                        <p><a href="tel:+74951234567">+7 (959) 537-08-90</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-text">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@hangan.ru">Dr.Pixel8@yandex.ru</a></p>
+                    </div>
+                </div>
+
+                <div class="hours-section">
+                    <h3><i class="far fa-clock"></i> Часы работы</h3>
+                    <table class="hours-table">
+                        <tr>
+                            <td>Понедельник - Пятница</td>
+                            <td>11:00 - 23:00</td>
+                        </tr>
+                        <tr>
+                            <td>Суббота - Воскресенье</td>
+                            <td>12:00 - 00:00</td>
+                        </tr>
+                        <tr>
+                            <td>Кухня закрывается</td>
+                            <td>За час до закрытия</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="social-section">
+                    <h3><i class="fas fa-hashtag"></i> Мы в соцсетях</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-telegram-plane"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="restaurant-photo">
+                <img src="images/fon/restaurant-front.jpg" alt="Фасад ресторана Ханган">
+            </div>
+            
+            <div class="contact-form">
+                <h2>Остались вопросы?</h2>
+                <form id="contactForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="guests">Количество гостей</label>
+                            <input type="number" id="guests" class="form-control" min="1">
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Ваше сообщение</label>
+                            <textarea id="message" class="form-control"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="directions">
+                <h3><i class="fas fa-directions"></i> Как добраться</h3>
+                
+                <div class="transport-method">
+                    <div class="transport-icon">
+                        <i class="fas fa-subway"></i>
+                    </div>
+                    <div>
+                        <p><strong>Метро:</strong> Станция "Корейская", выход к БЦ "Сеул"</p>
+                    </div>
+                </div>
+
+                <div class="transport-method">
+                    <div class="transport-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <div>
+                        <p><strong>Автобус:</strong> № 123, 456 до остановки "Улица Корейская"</p>
+                    </div>
+                </div>
+                
+                <div class="transport-method">
+                    <div class="transport-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div>
+                        <p><strong>На машине:</strong> Парковка у БЦ "Сеул" (первые 2 часа бесплатно для гостей ресторана)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ресторан корейской кухни "Ханган". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script/contacts.js"></script>
+</body>
+</html>

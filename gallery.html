@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея - Ханган</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/zoom.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Ханган</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="gallery.html" class="active">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="registration.html">Регестрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="gallery-hero">
+        <h1>Наша Галерея</h1>
+    </section>
+
+    <section class="gallery-section">
+        <div class="container">
+
+            <div class="gallery-grid">
+                <!-- Избранное фото -->
+                <div class="gallery-item featured-item" data-category="food">
+                    <img src="images/gallery/gallery-featured.jpg" alt="Корейский сет" class="gallery-img">
+                    <div class="featured-caption">
+                        <h3>Сет "Ханган"</h3>
+                        <p>Лучшие блюда корейской кухни в одной подаче</p>
+                    </div>
+                </div>
+
+                  <!-- Остальные фото -->
+                  <div class="gallery-item" data-category="food">
+                    <img src="images/gallery/bibimbap.jpg" alt="Пибимпаб" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Бибимбап</h4>
+                        <p>Традиционное корейское блюдо</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="interior">
+                    <img src="images/gallery/interior2.jpg" alt="Интерьер" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Основной зал</h4>
+                        <p>Атмосфера современной Кореи</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="team">
+                    <img src="images/gallery/team1.jpg" alt="Команда" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Наша команда</h4>
+                        <p>Профессионалы своего дела</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="images/gallery/gallery-event1.jpg" alt="Мастер-класс" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Кулинарный мастер-класс</h4>
+                        <p>Учим готовить кимчи</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <img src="images/gallery/feedback.jpg" alt="Отзыв" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Отзыв</h4>
+                        <p>От наших посетителей</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="interior">
+                    <img src="images/gallery/interior1.jpg" alt="Барная зона" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Барная зона</h4>
+                        <p>Корейские напитки и коктейли</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food">
+                    <img src="images/gallery/Kuksu.jpg" alt="Куксу" class="gallery-img">
+                    <div class="gallery-caption">
+                        <h4>Куксу</h4>
+                        <p>Традиционное корейское холодное блюдо</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img src="" alt="" class="modal-img" id="modalImage">
+            <div class="modal-nav">
+                <div class="modal-nav-btn" id="prevBtn">&#10094;</div>
+                <div class="modal-nav-btn" id="nextBtn">&#10095;</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ресторан корейской кухни "Ханган". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script/gallery.js"></script>
+
+</body>
+</html>

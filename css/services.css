@@ -1,0 +1,270 @@
+/* Общие стили */
+        :root {
+            --primary-color: #e74c3c;
+            --secondary-color: #333;
+            --light-bg: #f9f9f9;
+        }
+        
+        body {
+           background-color: #f9f5f2;
+        background-image: url('../images/fon/hero-bg.jpg');
+        background-attachment: fixed;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+/* Шапка */
+        .services-header {
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/fon/services-bg.jpg') center/cover;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        margin-bottom: 50px;
+        }
+        
+        .services-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s;
+        }
+        
+/* Секции услуг */
+        .services-section {
+            padding: 60px 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--primary-color);
+        }
+        
+/* Кейтеринг */
+        .catering-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-bottom: 80px;
+        }
+        
+        .catering-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .catering-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .catering-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .catering-content {
+            padding: 25px;
+        }
+        
+        .catering-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+        
+        .catering-price {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+        
+        .catering-features {
+            margin-bottom: 20px;
+        }
+        
+        .catering-features li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .catering-features li:before {
+            content: '\f00c';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+        }
+        
+/* Мастер-классы */
+        .classes-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .class-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .class-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        
+        .class-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .class-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .class-header {
+            margin-bottom: 15px;
+        }
+        
+        .class-title {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+        }
+        
+        .class-meta {
+            display: flex;
+            justify-content: space-between;
+            color: #777;
+            margin-bottom: 15px;
+        }
+        
+        .class-description {
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+/* Форма заявки */
+        .request-section {
+            background: var(--light-bg);
+            padding: 80px 0;
+            margin-top: 50px;
+        }
+        
+        .request-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        
+        .form-control:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(231,76,60,0.2);
+        }
+        
+        .submit-btn {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+            font-weight: 600;
+        }
+        
+        .submit-btn:hover {
+            background: #c0392b;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+/* Анимации */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+/* Адаптивность */
+        @media (max-width: 768px) {
+            .services-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .catering-grid, .classes-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .request-form {
+                padding: 30px 20px;
+            }
+        }

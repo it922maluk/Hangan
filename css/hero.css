@@ -1,0 +1,208 @@
+/* Герой секция */
+.hero {
+    background: url('../images/fon/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #333;
+    padding-top: 80px;
+
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Карусель баннеров */
+.hero-carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.carousel-inner {
+    display: flex;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.carousel-slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.slide-content h1 {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 600;
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.slide-content p {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    line-height: 1.4;
+}
+
+.slide-content {
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+    max-width: 800px;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 10;
+}
+
+.carousel-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.5);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-indicator.active {
+    background: white;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    padding: 10px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+}
+
+.carousel-arrow.prev {
+    left: 20px;
+}
+
+.carousel-arrow.next {
+    right: 20px;
+}
+
+.slide-content h1 {
+    animation: textFadeIn 1s ease-out forwards;
+}
+
+.slide-content p {
+    animation: textFadeIn 1s ease-out 0.3s forwards;
+}
+
+.slide-content .btn {
+    animation: textFadeIn 1s ease-out 0.6s forwards;
+}
+
+/* Особенности */
+.features {
+    padding: 60px 0;
+    background: url('../images/fon/hero-bg.jpg') no-repeat center center/cover;
+}
+
+.features .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feature {
+    font-weight: 300;
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+.feature h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.feature h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #e74c3c, #f39c12);
+}
+
+.feature p {
+    font-family: 'Georgia', serif;
+    font-size: 17.5px;
+    color: #555;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-style: italic;
+    padding: 0 20%;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .section-subtitle {
+      padding: 0 10%;
+      font-size: 1rem;
+    }
+  }

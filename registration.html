@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация | Ханган</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Ханган</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="gallery.html">Галерея</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="registration.html" class="active">Регестрация</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="register-header">
+        <h1>Присоединяйтесь к нам</h1>
+    </section>
+
+    <div class="container">
+        <div class="register-container">
+            <div class="register-card">
+                <h2 class="register-title">Создать аккаунт</h2>
+                
+                <form class="register-form" id="registerForm">
+                    <div class="form-group">
+                        <label for="name">Полное имя</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <div class="input-with-icon">
+                            <input type="password" id="password" class="form-control" required>
+                            <i class="fas fa-eye input-icon" id="togglePassword"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirmPassword">Подтвердите пароль</label>
+                        <input type="password" id="confirmPassword" class="form-control" required>
+                    </div>
+                    
+                    <div class="form-group form-check">
+                        <input type="checkbox" id="agreeTerms" class="form-check-input" required>
+                        <label for="agreeTerms">Я согласен с <a href="#">условиями использования</a> и <a href="#">политикой конфиденциальности</a></label>
+                    </div>
+                    
+                    <button type="submit" class="register-btn">Зарегистрироваться</button>
+                </form>
+                
+                <div class="social-register">
+                    <p>Или войдите через</p>
+                    <div class="social-buttons">
+                        <a href="#" class="social-btn google"><i class="fab fa-google"></i></a>
+                        <a href="#" class="social-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn vk"><i class="fab fa-vk"></i></a>
+                    </div>
+                </div>
+                
+                <div class="login-link">
+                    Уже есть аккаунт? <a href="login.html">Войти</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="benefits-section">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 50px; color: white;">Преимущества регистрации</h2>
+            
+            <div class="benefits-container">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-percentage"></i></div>
+                    <h3>Специальные скидки</h3>
+                    <p>Эксклюзивные предложения и бонусы для зарегистрированных пользователей</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3>Быстрое бронирование</h3>
+                    <p>Сохраняйте данные для быстрого заказа столиков и мероприятий</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon"><i class="fas fa-gift"></i></div>
+                    <h3>Персональные предложения</h3>
+                    <p>Получайте индивидуальные рекомендации и подарки в день рождения</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Ресторан корейской кухни "Ханган". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script/registration.js"></script>
+</body>
+</html>
